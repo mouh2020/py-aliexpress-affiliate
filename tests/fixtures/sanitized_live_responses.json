@@ -1,0 +1,499 @@
+{
+  "category_get": {
+    "aliexpress_affiliate_category_get_response": {
+      "resp_result": {
+        "resp_code": 200,
+        "resp_msg": "Call succeeds",
+        "result": {
+          "total_result_count": 3,
+          "categories": {
+            "category": [
+              {
+                "category_id": 2,
+                "category_name": "Food"
+              },
+              {
+                "category_id": 100007290,
+                "category_name": "Coffee",
+                "parent_category_id": 2
+              },
+              {
+                "category_id": 44,
+                "category_name": "Consumer Electronics"
+              }
+            ]
+          }
+        }
+      },
+      "request_id": "sanitized_req_id",
+      "_trace_id_": "sanitized_trace_id"
+    }
+  },
+  "product_query": {
+    "aliexpress_affiliate_product_query_response": {
+      "resp_result": {
+        "resp_code": 200,
+        "resp_msg": "Call succeeds",
+        "result": {
+          "current_page_no": 1,
+          "current_record_count": 2,
+          "total_record_count": 1372576,
+          "products": {
+            "product": [
+              {
+                "app_sale_price": "44.68",
+                "app_sale_price_currency": "CNY",
+                "commission_rate": "7.0%",
+                "discount": "0%",
+                "evaluate_rate": "95.4%",
+                "first_level_category_id": 44,
+                "first_level_category_name": "Consumer Electronics",
+                "hot_product_commission_rate": "0.0%",
+                "lastest_volume": 120,
+                "original_price": "657.09",
+                "original_price_currency": "CNY",
+                "platform_product_type": "ALL",
+                "product_detail_url": "https://www.aliexpress.com/item/3256812587562514.html",
+                "product_id": 3256812587562514,
+                "product_main_image_url": "https://ae-pic-a1.aliexpress-media.com/kf/Se489ec17c2724ab8a926325fb437c32ap.png",
+                "product_small_image_urls": {
+                  "string": [
+                    "https://ae-pic-a1.aliexpress-media.com/kf/S576cd5771a3c4291b3300a5339fe1bd1p.png",
+                    "https://ae-pic-a1.aliexpress-media.com/kf/Sc6632b41e6e54c4fb900c4f75e181934Z.png"
+                  ]
+                },
+                "product_title": "ATK Blazing Sky X1 V2 Ultimate Master+ Wireless Mouse 48g",
+                "product_video_url": "",
+                "promotion_link": "https://s.click.aliexpress.com/e/_sanitized",
+                "relevant_market_commission_rate": "7.0%",
+                "sale_price": "657.09",
+                "sale_price_currency": "CNY",
+                "second_level_category_id": 100000310,
+                "second_level_category_name": "Games & Accessories",
+                "ship_to_days": "ship to US in 7 days",
+                "shop_id": 1105399555,
+                "shop_name": "GameSync Store",
+                "shop_url": "https://www.aliexpress.com/store/1105399555",
+                "sku_id": 12000059297537459,
+                "target_app_sale_price": "98.69",
+                "target_app_sale_price_currency": "USD",
+                "target_original_price": "219.32",
+                "target_original_price_currency": "USD",
+                "target_sale_price": "98.69",
+                "target_sale_price_currency": "USD",
+                "tax_rate": "0.00"
+              },
+              {
+                "commission_rate": "7.0%",
+                "discount": "50%",
+                "first_level_category_id": 44,
+                "first_level_category_name": "Consumer Electronics",
+                "hot_product_commission_rate": "0.0%",
+                "lastest_volume": 45,
+                "original_price": "27.52",
+                "original_price_currency": "USD",
+                "product_detail_url": "https://www.aliexpress.com/item/3256808570253439.html",
+                "product_id": 3256808570253439,
+                "product_main_image_url": "https://ae-pic-a1.aliexpress-media.com/kf/S2222222222.png",
+                "product_small_image_urls": {
+                  "string": [
+                    "https://ae-pic-a1.aliexpress-media.com/kf/S2222222222.png"
+                  ]
+                },
+                "product_title": "Ergonomic 2.4G Wireless Optical Mouse",
+                "product_video_url": "",
+                "promotion_link": "https://s.click.aliexpress.com/e/_sanitized",
+                "sale_price": "13.76",
+                "sale_price_currency": "USD",
+                "second_level_category_id": 100000310,
+                "second_level_category_name": "Games & Accessories",
+                "shop_id": 1105399556,
+                "shop_name": "TechGear Store",
+                "shop_url": "https://www.aliexpress.com/store/1105399556",
+                "sku_id": 12000046536355860,
+                "target_original_price": "27.52",
+                "target_original_price_currency": "USD",
+                "target_sale_price": "13.76",
+                "target_sale_price_currency": "USD",
+                "tax_rate": "0.00"
+              }
+            ]
+          }
+        }
+      },
+      "request_id": "sanitized_req_id",
+      "_trace_id_": "sanitized_trace_id"
+    }
+  },
+  "productdetail_get": {
+    "aliexpress_affiliate_productdetail_get_response": {
+      "resp_result": {
+        "resp_code": 200,
+        "resp_msg": "Call succeeds",
+        "result": {
+          "current_record_count": 1,
+          "products": {
+            "product": [
+              {
+                "app_sale_price": "44.68",
+                "app_sale_price_currency": "CNY",
+                "commission_rate": "7.0%",
+                "discount": "0%",
+                "evaluate_rate": "95.4%",
+                "first_level_category_id": 44,
+                "first_level_category_name": "Consumer Electronics",
+                "hot_product_commission_rate": "0.0%",
+                "lastest_volume": 120,
+                "original_price": "657.09",
+                "original_price_currency": "CNY",
+                "platform_product_type": "ALL",
+                "product_detail_url": "https://www.aliexpress.com/item/3256812587562514.html",
+                "product_id": 3256812587562514,
+                "product_main_image_url": "https://ae-pic-a1.aliexpress-media.com/kf/Se489ec17c2724ab8a926325fb437c32ap.png",
+                "product_small_image_urls": {
+                  "string": [
+                    "https://ae-pic-a1.aliexpress-media.com/kf/S576cd5771a3c4291b3300a5339fe1bd1p.png",
+                    "https://ae-pic-a1.aliexpress-media.com/kf/Sc6632b41e6e54c4fb900c4f75e181934Z.png"
+                  ]
+                },
+                "product_title": "ATK Blazing Sky X1 V2 Ultimate Master+ Wireless Mouse 48g",
+                "product_video_url": "",
+                "promotion_link": "https://s.click.aliexpress.com/e/_sanitized",
+                "relevant_market_commission_rate": "7.0%",
+                "sale_price": "657.09",
+                "sale_price_currency": "CNY",
+                "second_level_category_id": 100000310,
+                "second_level_category_name": "Games & Accessories",
+                "ship_to_days": "ship to US in 7 days",
+                "shop_id": 1105399555,
+                "shop_name": "GameSync Store",
+                "shop_url": "https://www.aliexpress.com/store/1105399555",
+                "sku_id": 12000059297537459,
+                "target_app_sale_price": "98.69",
+                "target_app_sale_price_currency": "USD",
+                "target_original_price": "219.32",
+                "target_original_price_currency": "USD",
+                "target_sale_price": "98.69",
+                "target_sale_price_currency": "USD",
+                "tax_rate": "0.00"
+              }
+            ]
+          }
+        }
+      },
+      "request_id": "sanitized_req_id",
+      "_trace_id_": "sanitized_trace_id"
+    }
+  },
+  "product_shipping_get": {
+    "aliexpress_affiliate_product_shipping_get_response": {
+      "resp_result": {
+        "result": {
+          "shipping_fee": "1.99",
+          "delivery_days": "12",
+          "max_delivery_days": "12",
+          "ship_from_country": "CN",
+          "min_delivery_days": "7"
+        },
+        "resp_code": 200
+      },
+      "request_id": "sanitized_req_id",
+      "_trace_id_": "sanitized_trace_id"
+    }
+  },
+  "product_sku_detail_get": {
+    "aliexpress_affiliate_product_sku_detail_get_response": {
+      "result": {
+        "result": {
+          "ae_item_info": {
+            "additional_image_links": {
+              "string": [
+                "https://ae-pic-a1.aliexpress-media.com/kf/S576cd5771a3c4291b3300a5339fe1bd1p.png",
+                "https://ae-pic-a1.aliexpress-media.com/kf/Sc6632b41e6e54c4fb900c4f75e181934Z.png"
+              ]
+            },
+            "display_category_id_l1": 44,
+            "display_category_id_l2": 100000310,
+            "display_category_id_l3": 202177812,
+            "image_link": "https://ae-pic-a1.aliexpress-media.com/kf/Se489ec17c2724ab8a926325fb437c32ap.png",
+            "original_link": "https://www.aliexpress.com/item/3256812587562514.html",
+            "image_white": "https://ae-pic-a1.aliexpress-media.com/kf/S92c5f2daed074fb1862ac5f91dfa02c7q.png",
+            "title": "ATK Blazing Sky X1 V2 Ultimate Master+ Wireless Mouse 48g",
+            "display_category_name_l1": "Consumer Electronics",
+            "display_category_name_l2": "Games & Accessories",
+            "display_category_name_l3": "Mouse Controller",
+            "en_title": "ATK Blazing Sky X1 V2 Ultimate Master+ Wireless Mouse 48g",
+            "product_id": "3256812587562514",
+            "product_score": "0.0",
+            "store_name": "GameSync Store",
+            "review_number": "0",
+            "brand": "NONE",
+            "product_category": "Consumer Electronics,Games & Accessories,Mouse Controller"
+          },
+          "ae_item_sku_info": {
+            "traffic_sku_info_list": [
+              {
+                "color": "X1V2 Ultimate Plus W",
+                "link": "https://www.aliexpress.com/item/3256812587562514.html",
+                "price_with_tax": "219.98",
+                "sku_id": 12000059297537457,
+                "discount_rate": "55",
+                "sku_image_link": "https://ae-pic-a1.aliexpress-media.com/kf/Sfc4b273d5b814252bc32671e3c7ed2fe4.png",
+                "sale_price_with_tax": "98.99",
+                "sku_properties": "[{\"Color\":\"X1V2 Ultimate Plus W\"}]",
+                "currency": "USD"
+              },
+              {
+                "color": "X1V2 Ultimate Plus S",
+                "link": "https://www.aliexpress.com/item/3256812587562514.html",
+                "price_with_tax": "219.32",
+                "sku_id": 12000059297537459,
+                "discount_rate": "55",
+                "sku_image_link": "https://ae-pic-a1.aliexpress-media.com/kf/S3139cfed454946c3a3418e73dadb7c4cg.png",
+                "sale_price_with_tax": "98.69",
+                "sku_properties": "[{\"Color\":\"X1V2 Ultimate Plus S\"}]",
+                "currency": "USD"
+              }
+            ]
+          }
+        },
+        "code": 200,
+        "success": true
+      },
+      "request_id": "sanitized_req_id",
+      "_trace_id_": "sanitized_trace_id"
+    }
+  },
+  "featuredpromo_get": {
+    "aliexpress_affiliate_featuredpromo_get_response": {
+      "resp_result": {
+        "resp_code": 200,
+        "resp_msg": "Call succeeds",
+        "result": {
+          "current_record_count": 2,
+          "promos": {
+            "promo": [
+              {
+                "promo_name": "1009-1011 Brand day - Bestsellers",
+                "promo_desc": "1009-1011 Brand day - Bestsellers",
+                "product_num": 3000
+              },
+              {
+                "promo_name": "1009-1011 Brand day -Top Brands",
+                "promo_desc": "1009-1011 Brand day -Top Brands",
+                "product_num": 2457
+              }
+            ]
+          }
+        }
+      },
+      "request_id": "sanitized_req_id",
+      "_trace_id_": "sanitized_trace_id"
+    }
+  },
+  "link_generate": {
+    "aliexpress_affiliate_link_generate_response": {
+      "resp_result": {
+        "result": {
+          "total_result_count": 1,
+          "promotion_links": {
+            "promotion_link": [
+              {
+                "promotion_link": "https://s.click.aliexpress.com/e/_sanitized",
+                "source_value": "https://www.aliexpress.com/item/3256812587562514.html"
+              }
+            ]
+          },
+          "tracking_id": "sanitized_tracking_id"
+        },
+        "resp_code": 200,
+        "resp_msg": "Call succeeds"
+      },
+      "request_id": "sanitized_req_id",
+      "_trace_id_": "sanitized_trace_id"
+    }
+  },
+  "order_list": {
+    "aliexpress_affiliate_order_list_response": {
+      "resp_result": {
+        "resp_code": 200,
+        "resp_msg": "Call succeeds",
+        "result": {
+          "current_page_no": 1,
+          "current_record_count": 1,
+          "total_page_no": 1,
+          "total_record_count": 1,
+          "orders": {
+            "order": [
+              {
+                "product_detail_url": "https://www.aliexpress.com/item/1005009335863906.html",
+                "estimated_paid_commission": 4,
+                "product_count": 1,
+                "order_number": 3000000000010001,
+                "is_hot_product": "N",
+                "parent_order_number": 3000000000000001,
+                "product_main_image_url": "https://ae-pic-a1.aliexpress-media.com/kf/Sd2d5dd565abb43e49bca7796cbf394f2Y.jpg",
+                "order_status": "Payment Completed",
+                "category_id": 34,
+                "settled_currency": "USD",
+                "product_id": 1005009335863906,
+                "order_type": "global",
+                "tracking_id": "sanitized_tracking_id",
+                "created_time": "2026-10-13 08:40:28",
+                "paid_time": "2026-10-13 08:41:43",
+                "is_new_buyer": "N",
+                "sub_order_id": 3000000000010001,
+                "custom_parameters": "{\"af\":\"sanitized\"}",
+                "ship_to_country": "US",
+                "product_title": "For Bicycle Wheels Car Motorcycle Seven-Color Laser Car Decoration",
+                "incentive_commission_rate": "8.00%",
+                "estimated_incentive_paid_commission": 2,
+                "is_affiliate_product": "Y",
+                "paid_amount": 31,
+                "commission_rate": "15.00%",
+                "order_platform": "affiliate_platform",
+                "order_id": 3000000000000001
+              }
+            ]
+          }
+        }
+      },
+      "request_id": "sanitized_req_id",
+      "_trace_id_": "sanitized_trace_id"
+    }
+  },
+  "order_listbyindex": {
+    "aliexpress_affiliate_order_listbyindex_response": {
+      "resp_result": {
+        "resp_code": 200,
+        "resp_msg": "Call succeeds",
+        "result": {
+          "current_record_count": 1,
+          "min_query_index_id": "1791905758715_0000000000_3000000000010002",
+          "max_query_index_id": "1791906103281_0000000000_3000000000010001",
+          "orders": {
+            "order": [
+              {
+                "product_detail_url": "https://www.aliexpress.com/item/1005006055316664.html",
+                "estimated_paid_commission": 5,
+                "product_count": 1,
+                "is_hot_product": "N",
+                "product_main_image_url": "https://ae-pic-a1.aliexpress-media.com/kf/Sec4ff3d7aac341578bd7c60d2705ff29S.jpg",
+                "order_status": "Payment Completed",
+                "category_id": 36,
+                "settled_currency": "USD",
+                "product_id": 1005006055316664,
+                "order_type": "global",
+                "tracking_id": "sanitized_tracking_id",
+                "created_time": "2026-10-13 08:31:38",
+                "paid_time": "2026-10-13 08:35:58",
+                "is_new_buyer": "N",
+                "sub_order_id": 3000000000010002,
+                "custom_parameters": "{\"af\":\"sanitized\"}",
+                "ship_to_country": "US",
+                "product_title": "New Creative Crown Skull Ring Personality Double Color",
+                "incentive_commission_rate": "0.0%",
+                "is_affiliate_product": "Y",
+                "paid_amount": 79,
+                "commission_rate": "7.00%",
+                "order_platform": "affiliate_platform",
+                "order_id": 3000000000000002
+              }
+            ]
+          }
+        }
+      },
+      "request_id": "sanitized_req_id",
+      "_trace_id_": "sanitized_trace_id"
+    }
+  },
+  "order_get": {
+    "aliexpress_affiliate_order_get_response": {
+      "resp_result": {
+        "result": {
+          "current_record_count": 1,
+          "orders": {
+            "order": [
+              {
+                "product_detail_url": "https://www.aliexpress.com/item/1005009335863906.html",
+                "estimated_paid_commission": 4,
+                "product_count": 1,
+                "order_number": 3000000000010001,
+                "is_hot_product": "N",
+                "parent_order_number": 3000000000000001,
+                "product_main_image_url": "https://ae-pic-a1.aliexpress-media.com/kf/Sd2d5dd565abb43e49bca7796cbf394f2Y.jpg",
+                "order_status": "Payment Completed",
+                "settled_currency": "USD",
+                "category_id": 34,
+                "product_id": 1005009335863906,
+                "order_type": "global",
+                "tracking_id": "sanitized_tracking_id",
+                "created_time": "2026-10-13 08:40:28",
+                "paid_time": "2026-10-13 08:41:43",
+                "customer_parameters": "{\"af\":\"sanitized\"}",
+                "is_new_buyer": "N",
+                "ship_to_country": "US",
+                "sub_order_id": 3000000000010001,
+                "product_title": "For Bicycle Wheels Car Motorcycle Seven-Color Laser Car Decoration",
+                "incentive_commission_rate": "8.00%",
+                "estimated_incentive_paid_commission": 2,
+                "is_affiliate_product": "Y",
+                "paid_amount": 31,
+                "commission_rate": "15.00%",
+                "order_platform": "affiliate_platform",
+                "order_id": 3000000000000001
+              }
+            ]
+          }
+        },
+        "resp_code": 200,
+        "resp_msg": "Call succeeds"
+      },
+      "request_id": "sanitized_req_id",
+      "_trace_id_": "sanitized_trace_id"
+    }
+  },
+  "error_incomplete_signature": {
+    "error_response": {
+      "code": "IncompleteSignature",
+      "msg": "The request signature does not conform to platform standards",
+      "request_id": "sanitized_req_id"
+    }
+  },
+  "error_invalid_app_key": {
+    "error_response": {
+      "code": "InvalidAppKey",
+      "msg": "The specified App Key is invalid",
+      "request_id": "sanitized_req_id"
+    }
+  },
+  "error_api_call_limit": {
+    "error_response": {
+      "type": "ISV",
+      "code": "ApiCallLimit",
+      "msg": "Api access frequency exceeds the limit. this ban will last 1 seconds",
+      "request_id": "sanitized_req_id",
+      "_trace_id_": "sanitized_trace_id"
+    }
+  },
+  "error_top_405_empty": {
+    "error_response": {
+      "code": "15",
+      "type": "ISP",
+      "sub_code": "ERROR-405",
+      "sub_msg": "The result is empty",
+      "request_id": "sanitized_req_id",
+      "_trace_id_": "sanitized_trace_id"
+    }
+  },
+  "error_business_405_empty": {
+    "aliexpress_affiliate_order_get_response": {
+      "resp_result": {
+        "resp_code": 405,
+        "resp_msg": "The result is empty"
+      },
+      "request_id": "sanitized_req_id",
+      "_trace_id_": "sanitized_trace_id"
+    }
+  }
+}
