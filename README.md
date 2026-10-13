@@ -1,37 +1,38 @@
-# py-aliexpress-affiliate
+# 🛍️ py-aliexpress-affiliate
 
+[![PyPI version](https://img.shields.io/pypi/v/py-aliexpress-affiliate.svg)](https://pypi.org/project/py-aliexpress-affiliate/)
 [![CI](https://github.com/mouh2020/py-aliexpress-affiliate/actions/workflows/ci.yml/badge.svg)](https://github.com/mouh2020/py-aliexpress-affiliate/actions/workflows/ci.yml)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/downloads/)
 [![Typed](https://img.shields.io/badge/typing-strict-brightgreen.svg)](https://mypy-lang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-> **Disclaimer**: `py-aliexpress-affiliate` is an **unofficial**, independent open-source community library. It is **not affiliated with, endorsed by, or sponsored by AliExpress or Alibaba Group**. "AliExpress" and "Alibaba" are trademarks of Alibaba Group Holding Limited.
+> ⚠️ **Disclaimer**: `py-aliexpress-affiliate` is an **unofficial**, independent open-source community library. It is **not affiliated with, endorsed by, or sponsored by AliExpress or Alibaba Group**. "AliExpress" and "Alibaba" are trademarks of Alibaba Group Holding Limited.
 
 A production-quality, **fully typed** (`mypy --strict`) Python library that wraps all **15 official AliExpress Affiliate (AE Affiliate) Open Platform API endpoints** with both **synchronous** and **asynchronous** (`httpx`) clients and **Pydantic v2** domain models.
 
 ---
 
-## Features
+## ✨ Features
 
-- **Complete AE Affiliate API Coverage (15/15 Endpoints)**:
-  - Links (`aliexpress.affiliate.link.generate`)
-  - Categories (`aliexpress.affiliate.category.get` + parent/child filtering & caching)
-  - Featured Promotions (`featuredpromo.get`, `featuredpromo.products.get`)
-  - Products & Hot Products (`product.query`, `hotproduct.query`, `hotproduct.download`, `productdetail.get`, `product.smartmatch`)
-  - Shipping & SKU Details (`product.shipping.get`, `product.sku.detail.get`)
-  - Real-time Coupons & Promotions (`promotion.info.get`)
-  - Orders (`order.get`, `order.list`, `order.listbyindex`)
-- **Clean Domain Return Types**:
+- 🎯 **Complete AE Affiliate API Coverage (15/15 Endpoints)**:
+  - 🔗 Links (`aliexpress.affiliate.link.generate`)
+  - 🗂️ Categories (`aliexpress.affiliate.category.get` + parent/child filtering & caching)
+  - 🎉 Featured Promotions (`featuredpromo.get`, `featuredpromo.products.get`)
+  - 📦 Products & Hot Products (`product.query`, `hotproduct.query`, `hotproduct.download`, `productdetail.get`, `product.smartmatch`)
+  - 🚚 Shipping & SKU Details (`product.shipping.get`, `product.sku.detail.get`)
+  - 🎟️ Real-time Coupons & Promotions (`promotion.info.get`)
+  - 🧾 Orders (`order.get`, `order.list`, `order.listbyindex`)
+- 🧩 **Clean Domain Return Types**:
   - **Single-item methods** (`get_product_details`, `get_order_details`, `generate_affiliate_link`, `get_category`, `get_product_shipping_info`, `get_product_sku_details`, `get_promotion_info`) accept a single identifier and return a single domain model (or raise `ProductNotFoundError`, `OrderNotFoundError`, `CategoryNotFoundError`, `LinkGenerationError`).
   - **Batch methods** (`get_products_details`, `get_orders_details`, `get_affiliate_links`, `get_promotions_info`) accept sequences of identifiers and return `list[Model]`.
   - **Paginated list methods** (`get_products`, `get_hot_products`, `download_hot_products`, `get_featured_promo_products`, `smart_match_products`, `get_order_list`, `get_order_list_by_index`) return generic `Page[Model]` or `CursorPage[Model]` containers (`items`, `page_no`, `page_size`, `total_count`, `total_pages`, `has_next`).
-- **Exact TOP Request Signing**: Preserves the battle-tested TOP MD5 signing algorithm from [`sergioteula/python-aliexpress-api`](https://github.com/sergioteula/python-aliexpress-api).
-- **Sync & Async Parity**: `AliExpressClient` and `AsyncAliExpressClient` expose identical methods and resource namespaces (`.links`, `.categories`, `.products`, `.orders`, `.promotions`).
-- **Reliability & Security by Default**: Configurable timeouts, exponential backoff retries (including automatic retry on transient `ApiCallLimit` gateway rate limits), and automatic redaction of secrets (`app_secret`, `session`, `app_signature`) in `repr()`, `str()`, transport exception messages, and debug logs.
+- 🔐 **Exact TOP Request Signing**: Preserves the battle-tested TOP MD5 signing algorithm from [`sergioteula/python-aliexpress-api`](https://github.com/sergioteula/python-aliexpress-api).
+- ⚡ **Sync & Async Parity**: `AliExpressClient` and `AsyncAliExpressClient` expose identical methods and resource namespaces (`.links`, `.categories`, `.products`, `.orders`, `.promotions`).
+- 🛡️ **Reliability & Security by Default**: Configurable timeouts, exponential backoff retries (including automatic retry on transient `ApiCallLimit` gateway rate limits), and automatic redaction of secrets (`app_secret`, `session`, `app_signature`) in `repr()`, `str()`, transport exception messages, and debug logs.
 
 ---
 
-## Installation
+## 📦 Installation
 
 ```bash
 pip install py-aliexpress-affiliate
@@ -45,7 +46,7 @@ pip install -e ".[dev]"
 
 ---
 
-## Configuration
+## ⚙️ Configuration
 
 You can pass credentials and defaults directly to `AliExpressClient` / `AsyncAliExpressClient` or configure them via environment variables:
 
@@ -63,9 +64,9 @@ You can pass credentials and defaults directly to `AliExpressClient` / `AsyncAli
 
 ---
 
-## Quickstart
+## 🚀 Quickstart
 
-### Synchronous Usage
+### 🔄 Synchronous Usage
 
 ```python
 from aliexpress_affiliate import (
@@ -128,7 +129,7 @@ with AliExpressClient(
         print(o.order_id, o.sub_order_id, o.paid_amount_decimal, o.estimated_paid_commission_decimal)
 ```
 
-### Asynchronous Usage
+### ⚡ Asynchronous Usage
 
 ```python
 import asyncio
@@ -154,7 +155,7 @@ asyncio.run(main())
 
 ---
 
-## API Reference
+## 📚 API Reference
 
 Both `AliExpressClient` and `AsyncAliExpressClient` expose top-level methods as well as grouped resource namespaces (`client.links`, `client.categories`, `client.products`, `client.promotions`, `client.orders`):
 
@@ -178,7 +179,7 @@ Both `AliExpressClient` and `AsyncAliExpressClient` expose top-level methods as 
 
 ---
 
-## Error Handling
+## 🚨 Error Handling
 
 All exceptions inherit from `AliExpressError`:
 
@@ -233,8 +234,8 @@ except ValidationError as exc:
 
 ---
 
-## Attribution, Trademarks & License
+## 📜 Attribution, Trademarks & License
 
 Released under the [MIT License](LICENSE).
-- The TOP MD5 request-signing logic and legacy compatibility aliases are adapted from [`sergioteula/python-aliexpress-api`](https://github.com/sergioteula/python-aliexpress-api) (Copyright (c) 2020 Sergio Abad, MIT License).
-- **Non-Affiliation Notice**: This project is an independent, unofficial open-source library and is not affiliated with, endorsed by, or sponsored by AliExpress or Alibaba Group Holding Limited.
+- 🙏 The TOP MD5 request-signing logic and legacy compatibility aliases are adapted from [`sergioteula/python-aliexpress-api`](https://github.com/sergioteula/python-aliexpress-api) (Copyright (c) 2020 Sergio Abad, MIT License).
+- ⚖️ **Non-Affiliation Notice**: This project is an independent, unofficial open-source library and is not affiliated with, endorsed by, or sponsored by AliExpress or Alibaba Group Holding Limited.
