@@ -60,7 +60,7 @@ Homepage = "https://github.com/mouh2020/py-aliexpress-affiliate"
 Documentation = "https://github.com/mouh2020/py-aliexpress-affiliate#readme"
 Repository = "https://github.com/mouh2020/py-aliexpress-affiliate.git"
 Issues = "https://github.com/mouh2020/py-aliexpress-affiliate/issues"
-Changelog = "https://github.com/mouh2020/py-aliexpress-affiliate/blob/main/CHANGELOG.md"
+Changelog = "https://github.com/mouh2020/py-aliexpress-affiliate/blob/master/CHANGELOG.md"
 
 [tool.hatch.version]
 path = "src/aliexpress_affiliate/__init__.py"

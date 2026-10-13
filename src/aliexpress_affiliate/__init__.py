@@ -91,7 +91,7 @@ from .utils import (
     validate_single_order_id,
 )
 
-__version__ = "0.2.1"
+__version__ = "0.2.2"
 
 __all__ = [
     "APIError",
